@@ -7,8 +7,7 @@ services:
       APISIX_STAND_ALONE: "true"
     volumes:
     - ./apisix-conf.yaml:/usr/local/apisix/conf/apisix.yaml
-    ports:
-    - "9080:9080"
+    network_mode: host
   keycloak:
     container_name: keycloak
     image: quay.io/keycloak/keycloak
