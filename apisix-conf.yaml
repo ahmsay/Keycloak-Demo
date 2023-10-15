@@ -1,32 +1,20 @@
 routes:
-- id: root
-  uri: /
-  upstream:
-    nodes:
-      "127.0.0.1:80": 1
-    type: roundrobin
-  plugin_config_id: 1
 - id: keycloak
   uri: /anything/*
   upstream:
     nodes:
       "httpbin.org:80": 1
     type: roundrobin
-  plugin_config_id: 2
+  plugin_config_id: 1
 plugin_configs:
 - id: 1
   plugins:
-    response-rewrite:
-      body: "Hello there.\n"
-  desc: "response-rewrite"
-- id: 2
-  plugins:
     openid-connect:
-      client_id: "myclient"
-      client_secret: "B60Za4MNsQFJrEXnuJaWKSyrkK9DYJDZ"
+      client_id: "apisix"
+      client_secret: "WrdyR8FGUtIff3I8ewdGD2AxZLstJklh"
       discovery: "http://127.0.0.1:9876/realms/myrealm/.well-known/openid-configuration"
       scope: "openid profile"
-      bearer_only: false
+      bearer_only: true
       realm: "myrealm"
       redirect_uri: "http://127.0.0.1:9080/anything/callback"
       logout_path: "/anything/logout"
