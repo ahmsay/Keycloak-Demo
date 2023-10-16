@@ -11,7 +11,7 @@ plugin_configs:
   plugins:
     openid-connect:
       client_id: "apisix"
-      client_secret: "WrdyR8FGUtIff3I8ewdGD2AxZLstJklh"
+      client_secret: "useTheClientSecretFromKeycloak"
       discovery: "http://127.0.0.1:9876/realms/myrealm/.well-known/openid-configuration"
       scope: "openid profile"
       bearer_only: true
