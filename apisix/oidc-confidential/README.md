@@ -16,12 +16,12 @@ Open ID Connect confidential client type.
 - Create a new user. Username will be "zorkov".
 - You'll see the user details page. In Credentials tab, set a password for the user. The password will be "asdzxc". Switch the temporary
 option to "Off" so you don't have to change the password.
-- You are good to go. Authenticate Keycloak to get the JWT. We will provide the grant type, username, password, client secret, client id. Replace <client-secret> with your client secret.
+- You are good to go. Authenticate Keycloak to get the JWT. We will provide the grant type, username, password, client secret, client id. Replace `<client-secret>` with your client secret.
 ```
 curl -XPOST "http://127.0.0.1:9876/realms/myrealm/protocol/openid-connect/token" -d "grant_type=password&username=zorkov&client_id=apisix&client_secret=<client-secret>&password=asdzxc"
 ```
 - Copy the access token from the response (Yes it's long).
-- Make a new request to the API with the access token. Replace <access-token> with your access token.
+- Make a new request to the API with the access token. Replace `<access-token>` with your access token.
 ```
 curl http://127.0.0.1:9080/anything/test -H "Authorization: Bearer <access-token>"
 ```
