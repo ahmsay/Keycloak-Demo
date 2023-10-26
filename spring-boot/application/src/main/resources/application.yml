@@ -1,17 +1,6 @@
 spring:
   security:
     oauth2:
-      client:
-        registration:
-          keycloak:
-            client-id: spring-boot
-            authorization-grant-type: authorization_code
-            scope:
-            - openid
-        provider:
-          keycloak:
-            issuer-uri: http://localhost:9876/realms/myrealm
-            user-name-attribute: preferred_username
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:9876/realms/myrealm
+          jwk-set-uri: http://localhost:9876/realms/myrealm/protocol/openid-connect/certs
