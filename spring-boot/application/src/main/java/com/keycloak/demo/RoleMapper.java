@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @Configuration
-public class CustomClaimsWithAuthoritiesConfiguration {
+public class RoleMapper {
 
     @Bean
     public JwtAuthenticationConverter jwtAuthenticationConverterForKeycloak() {
