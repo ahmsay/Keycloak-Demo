@@ -8,4 +8,4 @@ This repository contains various examples about Keycloak. Feel free to explore.
 
 <a href="apisix/oidc-confidential/README.md">APISIX OpenID Connect<a/>
 
-<a href="spring-boot/README.md">Spring Boot Resource Server<a/>
+<a href="spring-boot/resource-server/README.md">Spring Boot Resource Server<a/>
