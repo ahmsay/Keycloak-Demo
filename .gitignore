@@ -1,3 +1,5 @@
 .idea
-spring-boot/application/.gradle
-spring-boot/application/build
+postgres/pg-data
+spring-boot/resource-server/.gradle
+spring-boot/resource-server/build
+spring-boot/resource-server/.idea
