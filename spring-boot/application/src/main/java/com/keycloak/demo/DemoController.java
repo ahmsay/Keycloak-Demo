@@ -17,6 +17,6 @@ public class DemoController {
     @PreAuthorize("hasAuthority('PREMIUM')")
     @GetMapping("/premium")
     public String premium(@AuthenticationPrincipal Jwt jwt) {
-        return String.format("Hello, %s!", jwt.getClaimAsString("preferred_username"));
+        return String.format("Hello, premium %s!", jwt.getClaimAsString("preferred_username"));
     }
 }
