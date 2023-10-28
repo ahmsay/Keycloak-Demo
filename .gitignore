@@ -1,4 +1,3 @@
 .idea
-postgres/pg-data
 spring-boot/application/.gradle
 spring-boot/application/build
