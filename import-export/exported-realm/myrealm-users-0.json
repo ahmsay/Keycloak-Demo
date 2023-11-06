@@ -1,0 +1,25 @@
+{
+  "realm": "myrealm",
+  "users": [
+    {
+      "username": "zorkov",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": false,
+      "firstName": "",
+      "lastName": "",
+      "credentials": [
+        {
+          "type": "password",
+          "userLabel": "My password",
+          "secretData": "{\"value\":\"9kS2upDytEKh09UInMdNZgZIBkkB5nLCXmZQPoTbUAk=\",\"salt\":\"0pTmgWnxTxlANNWQB/KMmw==\",\"additionalParameters\":{}}",
+          "credentialData": "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+        }
+      ],
+      "realmRoles": [
+        "PREMIUM",
+        "default-roles-myrealm"
+      ]
+    }
+  ]
+}
