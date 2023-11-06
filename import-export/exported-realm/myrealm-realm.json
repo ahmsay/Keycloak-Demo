@@ -20,17 +20,21 @@
       "rootUrl": "",
       "adminUrl": "",
       "baseUrl": "",
+      "surrogateAuthRequired": false,
       "enabled": true,
+      "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
+      "secret": "GEGalcYt5wCDX9zdqQzUfO4TyNJdfB4B",
       "redirectUris": [
         "/*"
       ],
       "bearerOnly": false,
+      "consentRequired": false,
       "standardFlowEnabled": true,
       "implicitFlowEnabled": false,
       "directAccessGrantsEnabled": true,
       "serviceAccountsEnabled": false,
-      "publicClient": true,
+      "publicClient": false,
       "frontchannelLogout": true,
       "protocol": "openid-connect"
     }
